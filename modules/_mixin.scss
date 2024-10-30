@@ -1,0 +1,71 @@
+@mixin flexspacegap(){
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+@mixin rightfontspacing(){
+    color: $white;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 12px;
+}
+@mixin leftfontspacing(){
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@mixin boxborder(){
+    width: 100%;
+    padding: 1px;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(199,185,185,0) 100%);
+}
+@mixin box(){
+    background-color: $lightblackcolor;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+@mixin button(){
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background-color: $lightblackcolor;
+    color: $white;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 500;
+    border: 1px solid #252525;
+    transition: .2s ease-in-out;
+
+    &:hover{
+        background-color: $lightblackcolorhover;
+    }
+}
+
+@mixin header(){
+    color: $white;
+    font-family: $stylefont;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 30px #fff,
+    0 0 81px #fff,
+}
+@mixin subheader(){
+    color: rgb(75, 75, 75);
+    font-size: 1.2rem;
+}
+
+@mixin paragraph(){
+    color: $white;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 12px;
+}

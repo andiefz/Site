@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---
+    
+    ##############################################################
+    #															 #
+    #															 #
+    #  Developer : Andi Setiawan-        						 #
+    #  Kontak    : andijaw24@gmail.com    						 #
+    #  Catatan   : "Jika tertarik dengan source code milik saya  #
+    #               harap hubungi email saya, terimakasih :))"   #
+    #															 #
+    #															 #
+    ##############################################################
+    
+    
+    --->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <title>Andi - Personal Website</title>
+</head>
+<body>
+
+    <!-- container -->
+    <div class="con">
+        <div class="container">
+
+            <!-- navbar -->
+            <div class="nav">
+                <div class="navbarin">
+                    <div class="navbarflex">
+                        <a href="#">Beranda</a>
+                        <a href="/cs.html">Info</a>
+                        <a href="/cs.html">Sertifikat</a>
+                        <a href="/cs.html">Musik</a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar -->
+
+            <script>
+                // clock code
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+			    const timeString = `${hours}:${minutes}`;
+
+                document.getElementById('clock').textContent = timeString;
+            }
+
+            // Update clock every minute (60000ms = 1 minute)
+            setInterval(updateClock, 1000);
+            // Initial call to display clock immediately
+            updateClock();
+            // clock code
+            </script>
+
+            <!-- landing -->
+            <div class="lan">
+                <div class="lanwrap">
+                    <div class="lanclock">
+                        <p id="clock">22:20</p>
+                    </div>
+                    <div class="lanprofil">
+                        <img src="images/4.png" height="150px" width="150px" alt="Ganteng banget saya ya pak/bu :)">
+                    </div>
+                    <div class="lanname">
+                        <h1><b>Andi Setiawan</b></h1>
+                        <h2>Welder SMAW-GTAW 6G Migas</h2>
+                    </div>
+                    <div class="lansocial">
+                        <a href="https://www.linkedin.com/in/andiefz"><i class="fa-brands fa-linkedin" title="linkedln"></i></a>
+                        <a href="https://wa.me/6281288855994"><i class="fa-brands fa-whatsapp" title="whatsapp"></i></a>
+                        <a href="https://instagram.com/andiefz_"><i class="fa-brands fa-instagram" title="Instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-github" title="github"></i></a>
+                    </div>
+                    <div class="lanbutton">
+                        <a href="" class="lihat"><i class="fa-brands fa-slack"></i>Download CV</a>
+                        <p>atau</p>
+                        <a href="https://wa.me/6281288855994" class="kontak"><i class="fa-solid fa-book"></i>Kontak Saya</a>
+                    </div>
+                    <div class="landot">
+                        <div class="dot"></div>
+                        <div class="dotoverlay"></div>
+                        <h4>OPEN TO WORK</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- landing -->
+
+            <!-- tentang -->
+            <div class="ten">
+                <div class="tenleft">
+                    <p>Tentang</p>
+                </div>
+                <div class="tenright">
+                    <span>Pengelasan adalah teknik penyambungan dua atau lebih material logam, dengan cara melelehkan dan menyatukannya logam menggunakan panas dan tekanan.</span>
+                    <p>Beberapa pengalaman yang sudah saya rasakan di dunia pengelasan adalah ketika mengetahui bahwa pengelasan tak cukup hanya dengan belajar materi saja, namun harus di imbangi dengan praktik lapangan.  <span class="bold" style="font-weight: 500;">Ketenangan Fikiran</span> merupakan latihan kunci untuk menghasilkan pengelasan yang bagus dan maksimal.</p>
+                    <p>Sertifikasi keahlian yang saya dapatkan salah satunnya dari <span class="bold" style="font-weight: 500;">PPSDM MIGAS CEPU</span> dengan sertifikat Welder Combination SMAW-GTAW 6G. Dan juga dari <span class="bold" style="font-weight: 500;">BPVP Banyuwangi</span> dengan sertifikat Plate Welder SMAW 3G dan 6G.</p>
+                </div>
+            </div>
+            <!-- tentang -->
+
+            <!-- teknologi -->
+            <div class="tek">
+                <div class="tekleft">
+                    <p>Keahlian</p>
+                </div>
+                <div class="tekright">
+                    <div class="tekborder">
+                        <div class="tekbox">
+                            <img src="images/figma.svg" alt="">
+                            <div class="tekspan">
+                                <span>DESAIN</span>
+                            </div>
+                            <h1>Figma</h1>
+                        </div>
+                    </div>
+                    <div class="tekborder">
+                        <div class="tekbox">
+                            <img src="images/html.svg" alt="">
+                            <div class="tekspan">
+                                <span>CODING</span>
+                            </div>
+                            <h1>HTML</h1>
+                        </div>
+                    </div>
+                    <div class="tekborder">
+                        <div class="tekbox">
+                            <img src="images/sass.svg" alt="">
+                            <div class="tekspan">
+                                <span>SLICING</span>
+                            </div>
+                            <h1>SASS</h1>
+                        </div>
+                    </div>
+                    <div class="tekborder">
+                        <div class="tekbox">
+                            <img src="images/javascript.svg" alt="">
+                            <div class="tekspan">
+                                <span>BACKEND</span>
+                            </div>
+                            <h1>Javascript</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- teknologi -->
+
+            <!-- work -->
+            <div class="wor">
+                <div class="worleft">
+                    <p>Proyek</p>
+                </div>
+                <div class="worright">
+                    <div class="worborder">
+                        <div class="worbox">
+                            <div class="worboxpanel">
+                                <div class="worboxpanela">
+                                    <img src="images/santoso.png" alt="Welding 6G GTAW">
+                                    <p>PT. Santoso Putra Karoseri</p>
+                                </div>
+                                <div class="worboxpanelb">
+                                    <span>Welder SMAW</span>
+                                    
+                                    <a href="/cs.html" class="selengkapnya" title="lihat dokumentasi">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                            <img src="images/sp.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="worborder">
+                        <div class="worbox">
+                            <div class="worboxpanel">
+                                <div class="worboxpanela">
+                                    <img src="images/Mulya.png" alt="">
+                                    <p>PT. Mulya Group</p>
+                                </div>
+                                <div class="worboxpanelb">
+                                    <span>Welder & Operator Crane</span>
+                                    
+                                    <a href="/cs.html" class="selengkapnya" title="lihat dokumentasi">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                            <img src="images/mg.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="worborder">
+                        <div class="worbox">
+                            <div class="worboxpanel">
+                                <div class="worboxpanela">
+                                    <img src="images/phe.png" alt="">
+                                    <p>PT. Pertamina Hulu Energi - WMO</p>
+                                </div>
+                                <div class="worboxpanelb">
+                                    <span>Welder SMAW/GTAW</span>
+                                    
+                                    <a href="/cs.html" class="selengkapnya" title="lihat dokumentasi">Lihat Selengkapnya</a>
+                                </div>
+                            </div>
+                            <img src="images/phe.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- work -->
+
+            <!-- footer -->
+            <div class="fo">
+                <div class="fowrap">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <h1>Thanks For Visiting :D</h1>
+                    <p>andijaw24@gmail.com</p>
+                    <div class="fososial">
+                        <a href="https://www.linkedin.com/in/andiefz"><i class="fa-brands fa-linkedin" title="linkedln"></i></a>
+                        <a href="https://wa.me/6281288855994"><i class="fa-brands fa-whatsapp" title="whatsapp"></i></a>
+                        <a href="https://instagram.com/andiefz_"><i class="fa-brands fa-instagram" title="instagram"></i></a>
+                        <a href="https://github.com/andiefz"><i class="fa-brands fa-github" title="github"></i></a>
+                    </div>
+                    <h4>© 2024 | Dilindungi Oleh Hak Cipta.</h4>
+                    <h3>Dengan di temani oleh <a href="https://open.spotify.com/playlist/1e3O4e1OzArvqFpXBJA2uC?si=7clEZxl_T8mwIG--UZ40Vg">musik berkualitas.</a></h3>
+                </div>
+            </div>
+            <!-- footer -->
+
+        </div>
+    </div>
+    <!-- container -->
+
+    <script>
+        AOS.init();
+
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        // fade in
+        window.addEventListener('load', () => {
+            document.body.classList.add('active');
+        });
+        // fade in
+    </script>
+
+</body>
+</html>

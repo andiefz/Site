@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head>    <meta charset="UTF-8">    <meta http-equiv="X-UA-Compatible" content="IE=edge">    <meta name="viewport" content="width=device-width, initial-scale=1">    <title>Comming Soon!!!!</title>    <meta name="robots" content="noindex, nofollow">    <meta property="og:url" content="https://tailwindflex.com/@gopi/simple-count-down-timer">    <meta property="og:title" content="coming soon">    <meta property="og:description" content="">    <meta property="og:image" content="https://tailwindflex.com/storage/thumbnails/simple-count-down-timer/thumb_u.min.webp?v=1">    <meta name="twitter:card" content="summary_large_image">    <meta property="twitter:domain" content="tailwindflex.com">    <meta property="twitter:url" content="https://tailwindflex.com/@gopi/simple-count-down-timer">    <meta name="twitter:title" content="coming soon">    <meta name="twitter:description" content="">    <meta name="twitter:image:secure_url" content="https://tailwindflex.com/storage/thumbnails/simple-count-down-timer/thumb_u.min.webp?v=1">    <script src="https://cdn.tailwindcss.com/3.4.3" async></script><style type="text/tailwindcss">    @tailwind base;
+@tailwind components;
+@tailwind utilities;</style><script> var code = `tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {}
+  }
+}` </script>
+            <script>
+              try {
+                eval(code)
+              } catch (e) {
+                console.log('Error in tailwind css config') 
+                eval(`tailwind.config = {
+                  darkMode: 'class',
+                  theme: {
+                    extend: {}
+                  }
+                }`)
+              }
+            </script></head><body class="flex items-center justify-center h-screen">
+<div class="flex justify-center">
+    <div class="bg-gray-50 rounded-lg shadow-lg px-8 py-6">
+        <div class="flex flex-col gap-4 items-center justify-between">
+            <h3 class="text-2xl font-bold text-gray-700">-Coming Soon-</h3>
+            <span id="countdown" class="text-2xl font-semibold text-gray-700"></span>
+        </div>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jan 26, 2025 15:37:25").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="countdown" 
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +
+                    "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+</div>   
+ <div class="fixed bottom-0 right-0 w-full z-[9999] p-2 text-center text-sm text-white bg-black">    This component is contributed by Andi Setiawan.     &nbsp;<a class="text-gray-200 underline" href="https://tailwindflex.com/@gopi/simple-count-down-timer?utm_source=fullscreen-preview&utm_medium=footer">view component</a>  
+   
+   
+   </div></body></html>
+ 
